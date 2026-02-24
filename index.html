@@ -151,6 +151,16 @@ function addToCart() {
   document.getElementById("cart-count").innerText = count;
 }
 </script>
+<div id="cookie-banner" style="position:fixed;bottom:0;width:100%;background:black;color:white;padding:15px;text-align:center;">
+This website uses cookies to improve user experience. 
+<a href="privacy.html" style="color:pink;">Learn more</a>
+<button onclick="acceptCookies()" style="margin-left:10px;">Accept</button>
+</div>
 
+<script>
+function acceptCookies() {
+  document.getElementById("cookie-banner").style.display = "none";
+}
+</script>
 </body>
 </html>
