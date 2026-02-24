@@ -1,54 +1,60 @@
 <index.html>
 <html>
 <head>
-<title>CoolGirl Store</title>
+<title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
+  font-family: 'Georgia', serif;
+  background: #f8f4f7;
+  color: #222;
 }
 
 header {
-  background: #000;
+  background: #fff;
   padding: 20px;
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
+  letter-spacing: 3px;
   font-weight: bold;
-  letter-spacing: 2px;
+}
+
+.subtext {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #777;
 }
 
 .cart {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: hotpink;
-  padding: 10px 15px;
+  background: #ffb6c1;
+  padding: 8px 15px;
   border-radius: 20px;
   font-weight: bold;
 }
 
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
   padding: 20px;
 }
 
 .product {
-  background: #1c1c1c;
-  border-radius: 15px;
+  background: white;
   padding: 15px;
+  border-radius: 15px;
   text-align: center;
   transition: 0.3s;
-  position: relative;
 }
 
 .product:hover {
-  transform: translateY(-5px);
+  transform: scale(1.03);
 }
 
 .product img {
@@ -57,128 +63,82 @@ header {
 }
 
 .price {
-  font-size: 18px;
   margin: 10px 0;
-}
-
-.old-price {
-  text-decoration: line-through;
-  color: gray;
-  font-size: 14px;
-}
-
-button {
-  background: hotpink;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
   font-weight: bold;
 }
 
+button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 .badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: red;
-  padding: 5px 10px;
+  background: #ff4d88;
+  color: white;
   font-size: 12px;
+  padding: 4px 8px;
   border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 </style>
 </head>
 
 <body>
 
-<header>COOLGIRL STORE</header>
+<header>RAREBLOOM</header>
+<div class="subtext">limited pieces • coquette • alternative • archive drops</div>
 
-<div class="cart">
-🛒 Cart: <span id="cart-count">0</span>
-</div>
+<div class="cart">🛒 <span id="cart-count">0</span></div>
 
 <div class="products">
 
-<!-- PRODUCT 1 -->
 <div class="product">
-<div class="badge">SALE</div>
+<div class="badge">LIMITED</div>
 <img src="https://via.placeholder.com/300">
-<h3>Sunset Lamp</h3>
-<div class="old-price">€39.99</div>
-<div class="price">€24.99</div>
+<h3>Lace Ribbon Corset Top</h3>
+<div class="price">€39.99</div>
 <button onclick="addToCart()">Add to Cart</button>
 </div>
 
-<!-- PRODUCT 2 -->
 <div class="product">
 <img src="https://via.placeholder.com/300">
-<h3>Galaxy Projector</h3>
-<div class="price">€34.99</div>
+<h3>Vintage Slip Dress</h3>
+<div class="price">€59.99</div>
 <button onclick="addToCart()">Add to Cart</button>
 </div>
 
-<!-- PRODUCT 3 -->
 <div class="product">
-<div class="badge">HOT</div>
+<div class="badge">RARE</div>
 <img src="https://via.placeholder.com/300">
-<h3>LED Strip Lights</h3>
-<div class="price">€19.99</div>
-<button onclick="addToCart()">Add to Cart</button>
-</div>
-
-<!-- PRODUCT 4 -->
-<div class="product">
-<img src="https://via.placeholder.com/300">
-<h3>Aesthetic Wall Collage</h3>
-<div class="price">€14.99</div>
-<button onclick="addToCart()">Add to Cart</button>
-</div>
-
-<!-- PRODUCT 5 -->
-<div class="product">
-<img src="https://via.placeholder.com/300">
-<h3>Mini Bluetooth Speaker</h3>
-<div class="price">€29.99</div>
-<button onclick="addToCart()">Add to Cart</button>
-</div>
-
-<!-- PRODUCT 6 -->
-<div class="product">
-<div class="badge">NEW</div>
-<img src="https://via.placeholder.com/300">
-<h3>Cloud Night Light</h3>
-<div class="price">€22.99</div>
-<button onclick="addToCart()">Add to Cart</button>
-</div>
-
-<!-- PRODUCT 7 -->
-<div class="product">
-<img src="https://via.placeholder.com/300">
-<h3>Phone Ring Light</h3>
-<div class="price">€12.99</div>
-<button onclick="addToCart()">Add to Cart</button>
-</div>
-
-<!-- PRODUCT 8 -->
-<div class="product">
-<img src="https://via.placeholder.com/300">
-<h3>Desk LED Clock</h3>
-<div class="price">€27.99</div>
-<button onclick="addToCart()">Add to Cart</button>
-</div>
-
-<!-- PRODUCT 9 -->
-<div class="product">
-<img src="https://via.placeholder.com/300">
-<h3>Neon Wall Sign</h3>
+<h3>Layered Ballet Cardigan</h3>
 <div class="price">€44.99</div>
 <button onclick="addToCart()">Add to Cart</button>
 </div>
 
-<!-- PRODUCT 10 -->
 <div class="product">
 <img src="https://via.placeholder.com/300">
-<h3>Portable Photo Printer</h3>
-<div class="price">€59.99</div>
+<h3>Bow Detail Mini Skirt</h3>
+<div class="price">€34.99</div>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="product">
+<div class="badge">ARCHIVE DROP</div>
+<img src="https://via.placeholder.com/300">
+<h3>Sheer Mesh Blouse</h3>
+<div class="price">€49.99</div>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/300">
+<h3>Coquette pastel milkmaid top</h3></h3>
+<div class="price">€19.99</div>
 <button onclick="addToCart()">Add to Cart</button>
 </div>
 
@@ -186,7 +146,6 @@ button {
 
 <script>
 let count = 0;
-
 function addToCart() {
   count++;
   document.getElementById("cart-count").innerText = count;
